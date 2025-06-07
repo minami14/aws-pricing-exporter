@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: aws_pricing
+    scrape_interval: 60s
+    static_configs:
+      - targets:
+        - aws-pricing-exporter:8080
